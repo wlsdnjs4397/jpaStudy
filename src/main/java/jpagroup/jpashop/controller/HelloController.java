@@ -1,4 +1,4 @@
-package jpagroup.jpashop;
+package jpagroup.jpashop.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,4 +11,15 @@ public class HelloController {
     public String hello(Model model){
         return "hello";
     }
+
+    @RequestMapping("/index")
+    public String index(){
+        return "index";
+    }
+
+    @RequestMapping("/generic")
+    public String generic(){
+        return "generic";
+    }
+
 }
